@@ -1,7 +1,5 @@
-FROM java:17
+FROM tomcat:8.0.20-jre8
+COPY tomcat-users.xml /usr/local/tomcat/conf/
+copy target/*war /usr/local/tomcat/webapps/app.warI
 
-EXPOSE 8080
 
-Add target/docker-0.0.1-SNAPSHOT.jar   docker-0.0.1-SNAPSHOT.jar
-
-ENTRYPOINT ["java","-jar","docker-0.0.1-SNAPSHOT.jar"]
