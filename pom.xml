@@ -6,13 +6,13 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.4.2</version>
-		<packaging>war</packaging>
 
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.docker</groupId>
 	<artifactId>docker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	  <packaging>war</packaging> <!-- Correct placement -->
 	<name>spring boot-docker</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
